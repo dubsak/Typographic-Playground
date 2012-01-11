@@ -9,7 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #000;
+	color: #3c8c88;
 	font-style: normal;
 }
 
@@ -41,12 +41,11 @@ h1 + p {
 }
 
 p {
-	position: relative;
 	margin-bottom: 0;
 }
 
 p + p {
-	text-indent: 4%;
+	text-indent: 1em;
 	/*If you want a paragraph indicator, uncomment the next line*/
 	/*background: url(images/paragraph_indicator_2.png) no-repeat 0 3px;*/
 	/*background: url(images/paragraph_indicator_3.png) no-repeat left 0;*/
@@ -67,7 +66,7 @@ p.pullquote {
 	-webkit-hyphenate-limit-after:3;
 	-webkit-hyphenate-limit-before:5;
 	text-align: left;
-	color: #454545;
+	color: #3c8c88;
 }
 
 p.pullquote:before {
@@ -97,4 +96,22 @@ li {
 	color: #555 !important;
 	list-style-type: disc;
 	line-height: 30px;
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+
+.sidebar {
+	font-size: .75em;
+	width: 17.1em !important;
+	padding: 0px 1.4em 0px 1.4em !important;
+	color: #bbb;
+}
+
+
+.sidebar h2 {
+	border-bottom: 4px double #e4e4e4;
+	padding-bottom: .4em;
+	margin-bottom: .5em;
+	margin-top: 1.3em;
+	color: #3c8c88;
 }
