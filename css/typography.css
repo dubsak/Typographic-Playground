@@ -4,51 +4,79 @@
 
 body {
 	font-size: 18px;
-	line-height: 1.4;	
+	line-height: 1.4;
+	color: #6f6f6f;	
 }
+
+/* @group Strong and Em */
+
+em {
+	font-family: 'GoudyItalic';
+}
+
+strong {
+	font-weight: bold;
+	color: #666;
+}
+
+.amp {
+	font-family: Palatino, Constantia, 'Palatino Linotype';
+	font-style: italic;
+}
+/* @end */
+
+
+/* @group Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #3c8c88;
+	color: #000000;
 	font-style: normal;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	text-align: left;
 }
 
 h1 {
 	font-size: 2.25em;
 	border-bottom: 4px double #e4e4e4;
-	margin: .2em 0;
+	margin: .2em 0 .14em;
 }
 
 h2 {
 	font-size: 1.5em;
-	margin: .6em 0 .3em;
-	
+	margin: .55em 0 .74em;
 }
 
 h3 {
 	font-size: 1.125em;
-	margin: 1em 0 .5em;
+	margin: 1em 0 1.05em;
 }
 
 h4, h5, h6 {
 	font-size: 1em;
-	margin: 1.4em 0 .7em;
+	margin: 1.27em 0;
 }
+
+/* @end */
+
+/* @group Paragraphs */
 
 h1 + p {
 	font-size: 1.3em;
 	color: #454545;
+	line-height: 1.435 !important;
+	margin-bottom: 1.15em;
+	margin-top: 1.156em;
 }
 
 p {
 	margin-bottom: 0;
 }
 
-p + p {
+p + p, blockquote + p, ul + p, ol + p {
 	text-indent: 1em;
-	/*If you want a paragraph indicator, uncomment the next line*/
-	/*background: url(images/paragraph_indicator_2.png) no-repeat 0 3px;*/
-	/*background: url(images/paragraph_indicator_3.png) no-repeat left 0;*/
 }
 
 p.pullquote {
@@ -63,8 +91,8 @@ p.pullquote {
 	float: right;
 	position: static;
 	margin: 0px 0 10px 30px;
-	-webkit-hyphenate-limit-after:3;
-	-webkit-hyphenate-limit-before:5;
+	-webkit-hyphenate-limit-after:4;
+	-webkit-hyphenate-limit-before:4;
 	text-align: left;
 	color: #3c8c88;
 }
@@ -77,41 +105,135 @@ p.pullquote:after {
 	content: "\201D";
 }
 
-em {
-	font-family: 'GoudyItalic';
+/* @end */
+
+/* @group Blockquotes */
+
+blockquote {
+	color: #454545;
+	padding: 1.90em;
+	margin-top: .3em;
+	margin-bottom: .3em;
 }
 
-strong {
-	font-weight: bold;
-	color: #666;
+blockquote p {
+	text-indent: 0;
+	font-size: 1.125em;
+	line-height: 1.65 !important;
 }
+
+blockquote p:first-child::before { 
+	content: "\201C";
+}
+
+blockquote p:last-child::after { 
+	content: "\201D";
+}
+
+blockquote p:first-child, p.pullquote {
+	text-indent: -.5em;
+}
+
+/* @end */
+
+/* @group Lists */
 
 ul {
 	margin-left: 0;
-	margin-bottom: .8em;
-	margin-top: .8em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 }
 
 li {
 	color: #555 !important;
 	list-style-type: disc;
 	line-height: 30px;
-	margin-top: .4em;
-	margin-bottom: .4em;
+	margin-top: .65em;
 }
+
+/* @end */
+
+/* @group Sidebar */
 
 .sidebar {
 	font-size: .75em;
 	width: 17.1em !important;
 	padding: 0px 1.4em 0px 1.4em !important;
-	color: #bbb;
+	color: #838383;
+	text-align: justify;
+	margin-top: 1.93em;
 }
 
+.sidebar div {
+	margin-bottom: 1.33em;
+}
 
 .sidebar h2 {
 	border-bottom: 4px double #e4e4e4;
 	padding-bottom: .4em;
-	margin-bottom: .5em;
-	margin-top: 1.3em;
-	color: #3c8c88;
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: .6em;
+}
+
+.sidebar p {
+	line-height: 1.575 !important;
+}
+/* @end */
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+	/* Tablet Layout: 768px */
+	div.container {
+		
+	}
+	
+	div.content {
+		
+	}
+	
+	div.sidebar {
+		
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	/* Mobile Layout: 320px */
+	div.content {
+		font-size: .9em;
+	}
+	
+	div.sidebar {
+		font-size: .8em;
+	}
+	
+	h1 + p {
+		margin-top: .6em;
+		margin-bottom: .6em;
+	}
+	
+	ul {
+		padding-left: 1em;
+	}
+	
+	p.pullquote {
+		margin-left: 0;
+		width: 100%;
+		margin-top: .8em;
+		margin-bottom: .8em;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Wide Mobile Layout: 480px */	
+	div.container {
+		
+	}
+	
+	div.content {
+		
+	}
+	
+	div.sidebar {
+		
+	}
 }

@@ -5,12 +5,25 @@
 		<title>Typography Tests</title>
 		<meta name="description" content="A starter for basic web typography. Added to as I 'get around to it'">
 		<meta name="author" content="Wade Sakundiak">
+		
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+		<meta name="DC.creator" content="Wade Sakundiak">
+		<meta name="DC.date.created" content="" />
+		<meta name="DC.type" content="Text" />
+		<meta name="DC.format" content="text/html" />
+		<meta name="DC.language" content="en" />
+		<meta name="DC.publisher" content="en" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
 		<link href="css/layout.css" rel="stylesheet">
-
+		
+		<script src="javascript/jquery.js" type="text/javascript"></script>
+		<script src="javascript/functions.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -26,7 +39,7 @@
 				
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 				
-				<h2>Another heading</h2>
+				<h2>Best possible &amp; in a heading</h2>
 				
 				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
 				
@@ -50,11 +63,15 @@
 				
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 				
-				<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<blockquote>
+					<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est.</p>
+				</blockquote>
 				
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 				
-				<h4>Whose heading</h4>
+				<h4>Whose heading?</h4>
 				
 				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
 				
@@ -71,22 +88,27 @@
 			</div>
 			
 			<div class="group sidebar">
-				<h2>Sidebar heading</h2>
+				<div>
+					<h2>Sidebar heading</h2>
+					
+					<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
+				<div>
+					<h2>Another sidebar heading</h2>
+					
+					<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+				</div>
+				<div>
+					<h2>What? Yeah, heading</h2>
+					
+					<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
 				
-				<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				
-				<h2>Another sidebar heading</h2>
-				
-				<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-				
-				<h2>What? Yeah, heading</h2>
-				
-				<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				
-				<h2>Stop the presses! Heading</h2>
-				
-				<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
+				<div>
+					<h2>Stop the presses! Heading</h2>
+					
+					<p>Cras mattis <em>consectetur</em> purus sit amet fermentum. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+				</div>
 			</div>
 		</div>
 	</body>
