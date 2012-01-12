@@ -81,6 +81,15 @@ h1 + p {
 	/*background: url(images/rule.gif) no-repeat center bottom;*/
 }
 
+/*Drop cap? Sure*/
+h1 + p:first-letter {
+	float: left;
+	line-height: .6;
+	font-size: 2.65em;
+	margin-top: .2em;
+	color: #000000;
+}
+
 p {
 	margin-bottom: 0;
 }
