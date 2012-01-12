@@ -23,6 +23,15 @@ strong {
 	font-family: Palatino, Constantia, 'Palatino Linotype';
 	font-style: italic;
 }
+
+a {
+	color: #4f77b0;
+}
+
+a:hover {
+	color: #293c58;
+}
+
 /* @end */
 
 
