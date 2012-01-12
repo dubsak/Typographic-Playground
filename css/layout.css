@@ -31,7 +31,7 @@ div.container {
 }
 
 div.content {
-	width: 27.835em;
+	width: 27.83em;
 	float: left;
 	padding: 0 1em;
 	text-align: justify;
@@ -42,6 +42,19 @@ div.sidebar {
 	float: left;
 	width: 12.8em;
 	padding: 0 1em;
+}
+
+div.footer {
+	border-top: 1px dashed #e4e4e4;
+	display: inline-block;
+	clear: both;
+	margin-top: 2em;
+	padding-top: 0.5em;
+}
+
+div.footer div {
+	width: 12.8em;
+	float: left;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 800px) {
@@ -70,7 +83,7 @@ div.sidebar {
 		padding: 0 1.15em !important;
 	}
 	
-	div.sidebar {
+	div.sidebar, div.footer div {
 		width: 19.8em !important;
 		padding: 0 1.2em !important;
 	}

@@ -156,9 +156,9 @@ li {
 
 /* @group Sidebar */
 
-.sidebar {
+.sidebar, .footer div {
 	font-size: .75em;
-	width: 17.1em !important;
+	width: 17.155em !important;
 	padding: 0px 1.4em 0px 1.4em !important;
 	color: #838383;
 	text-align: justify;
@@ -169,17 +169,20 @@ li {
 	margin-bottom: 1.33em;
 }
 
-.sidebar h2 {
+.sidebar h2, div.footer h2 {
 	border-bottom: 4px double #e4e4e4;
 	padding-bottom: .4em;
 	margin-top: 0;
 	margin-bottom: .6em;
 }
 
-.sidebar p {
+.sidebar p, div.footer p {
 	line-height: 1.575 !important;
 }
+
+
 /* @end */
+
 
 @media only screen and (min-width: 768px) and (max-width: 800px) {
 	/* Tablet Layout: 768px */
@@ -202,7 +205,7 @@ li {
 		font-size: .9em;
 	}
 	
-	div.sidebar {
+	div.sidebar, div.footer div {
 		font-size: .8em;
 	}
 	
