@@ -76,7 +76,7 @@ p {
 	margin-bottom: 0;
 }
 
-p + p, blockquote + p, ul + p, ol + p {
+p + p, ul + p, ol + p {
 	text-indent: 1em;
 }
 
@@ -118,7 +118,7 @@ blockquote {
 }
 
 blockquote p {
-	text-indent: 0;
+	text-indent: 1em;
 	font-size: 1.125em;
 	line-height: 1.65 !important;
 }
