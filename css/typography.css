@@ -5,7 +5,7 @@
 body {
 	font-size: 18px;
 	line-height: 1.4;
-	color: #6f6f6f;	
+	color: #777;	
 }
 
 /* @group Strong and Em */
@@ -30,7 +30,7 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #000000;
+	color: #222;
 	font-style: normal;
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
@@ -65,7 +65,7 @@ h4, h5, h6 {
 
 h1 + p {
 	font-size: 1.3em;
-	color: #454545;
+	color: #444;
 	line-height: 1.435;
 	margin-bottom: 1.15em;
 	margin-top: 1.156em;
@@ -172,7 +172,6 @@ li {
 .sidebar h2 {
 	border-bottom: 4px double #e4e4e4;
 	padding-bottom: .4em;
-	color: #000000;
 	margin-top: 0;
 	margin-bottom: .6em;
 }
